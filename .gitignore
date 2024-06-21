@@ -1,0 +1,26 @@
+# data
+*.7z
+*.csv
+*.json
+*.xml
+*.txt
+src/dataset/ds1000_data
+
+# venv
+.venv
+
+# bytecode
+__pycache__/
+
+# VSCode
+.vscode/
+
+# generated files
+src/dataset/artifacts
+src/docker/data
+
+# environment file
+.env
+
+# log
+*.log

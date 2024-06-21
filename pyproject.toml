@@ -1,0 +1,43 @@
+[tool.poetry]
+authors = ["tqtensor <victortang212@gmail.com>"]
+description = "SelfEvolve with Chain-of-Thought"
+name = "cot-selfevolve"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+boto3 = "^1.34.84"
+chromadb = ">=0.3,<1.0"
+dvc = {version = "^2", extras = ["s3"]}
+gdown = "^5.1.0"
+google-cloud-aiplatform = "^1.51.0"
+langchain = "^0.1.7"
+litellm = "^1.37.9"
+matplotlib = ">=3.5.2,<3.6.0"
+numpy = ">=1.21.6,<1.22.0"
+pandas = ">=1.3.5,<1.4.0"
+pandas-datareader = ">=0.10.0,<0.11.0"
+psutil = "^5.9.8"
+pydantic = ">=1.9,<2.0"
+python = "~3.8.10"
+python-dotenv = "^1.0.1"
+pyzstd = "^0.15.9"
+scikit-learn = ">=1.0.2,<1.1.0"
+scipy = ">=1.7.3,<1.8.0"
+seaborn = "^0.13.2"
+tensorflow = "2.10.0"
+tensorflow-io-gcs-filesystem = "0.23.1"
+tiktoken = "^0.6.0"
+torch = ">=1.12.1,<1.13.0"
+transformers = ">=4.22.1,<4.23.0"
+xgboost = ">=1.6.2,<1.7.0"
+xxhash = "^3.4.1"
+
+[tool.poetry.group.dev.dependencies]
+minio = "^7.2.5"
+pre-commit = "^2.20.0"
+toml-sort = "^0.23.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
